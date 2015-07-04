@@ -1,0 +1,19 @@
+<nav class="subHeader blue darken-4" role="navigation">
+
+  <div class="container main-nav hide-on-med-and-down center">
+    <div class="row">
+      <ul class="menu-list-items">
+        {{menu-items action="scrollAndRedirect"}}
+      </ul>
+    </div>
+  </div>
+
+  <div class=""> 
+    
+    <!-- <a href="#" data-activates="nav-mobile" class="ember-view button-collapse active"><i class="mdi-navigation-menu"></i></a> -->
+    <ul id="nav-mobile" class="side-nav">
+        {{menu-items action="scrollAndRedirect"}}
+    </ul>
+    {{#link-to 'index' class='button-collapse' data-activates='nav-mobile'}}<i class='mdi-navigation-menu'></i>{{/link-to}}
+  </div>
+</nav>me

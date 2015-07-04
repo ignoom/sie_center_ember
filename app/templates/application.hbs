@@ -1,3 +1,33 @@
-<h2 id="title">Welcome to Ember.js</h2>
-
+<header>
+  <div class="navbar-fixed">
+        <!-- main nav bar -->
+        {{main-header}}
+        <!-- /main nav bar -->
+        <!-- subheader -->
+        {{sub-header action="scrollAndRedirect"}}
+        <!-- /subheader -->
+      </div>
+</header>
+<div class="main-content">
 {{outlet}}
+</div>
+
+<!-- Footer -->
+<footer class="page-footer indigo">
+  
+  <div class="container">
+    <div class="row">
+     
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+    Made by <a class="indigo-text text-lighten-3" href="http://ignoom.com">Ignoom</a>
+    </div>
+  </div>
+
+</footer>
+<!-- /Footer --> 
+
+{{!-- ember-cli-materialize modal container --}}
+{{md-modal-container}}

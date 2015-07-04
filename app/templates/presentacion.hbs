@@ -1,0 +1,83 @@
+<div id="presentacion" class="section quienes-somos indigo">
+  <div class="container center">
+  {{title}}
+    <div class="row">
+      {{editable-text text=quienes_somos.title header='h1'}}
+    </div>
+    <div class="row">
+      <!-- 3 columnas --> 
+      {{#each section in quienes_somos.sections}}
+      <div class="col s12 m4 ">
+        {{editable-text text=section.subtitle header='h3'}}
+        <div class= "icon-block">
+          {{#if section.icon}}
+          <h2 class="brown-text">
+            <i class="{{section.icon}}"></i>
+          </h2>
+          {{/if}}
+          {{editable-text text=section.text }}
+        </div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</div>
+<div class="section info">
+  <div class="center">
+    <div class="row">
+    </div>
+    <div class="row">
+      <!-- 3 columnas --> 
+      {{#each section in info.sections}}
+      <div class="col s12 m4 ">
+        {{editable-text text=section.subtitle header='h3'}}
+        <div class= "icon-block">
+          {{#if section.icon}}
+          <h2 class="brown-text">
+            <i class="{{section.icon}}"></i>
+          </h2>
+          {{/if}}
+          {{#if section.img}}
+            <img class="responsive-img" src="assets/img/{{section.img}}" >
+          {{/if}}
+          {{#if section.bullets}}
+            <ul>
+            {{#each bullet in section.bullets}}
+              <li>{{editable-text text=bullet}}</li>
+            {{/each}}
+            </ul>
+          {{/if}}
+          {{editable-text text=section.text }}
+        </div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</div>
+<div class="divider"></div>
+<div class="section como-ayudar">
+  <div class="container">
+    <div class="row">
+      {{editable-text text=como_ayudar.title header='h3'}}
+    </div>
+    <div class="row">
+    {{#each section in como_ayudar.sections}}
+      <div class="row ">
+        {{editable-text text=section.subtitle}}
+      </div>
+      <div class="row">
+        {{editable-text text=section.text}}
+      </div>
+    {{/each}}
+    {{#if como_ayudar.footer}}
+      <div class="row">
+        {{editable-text text=como_ayudar.footer}}
+      </div>
+    {{/if}}
+    </div>
+  </div>
+</div>
+
+
+
+{{outlet}}

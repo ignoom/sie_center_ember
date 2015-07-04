@@ -1,0 +1,26 @@
+<!-- Seccion Eventos -->
+<div class="section lime lighten-5" id="eventos">
+  <div class="container center">
+    <div class="row">
+      {{ editable-text text=eventos.title header="h2" }}
+      <!-- <h2>Eventos</h2> -->
+    </div>
+    <div class="row">
+    {{#each section in eventos.sections}}
+
+      <div class="col s12 m6 ">
+        {{ editable-text text=section.subtitle header="h3" }}
+        <!-- <h4>Congresos</h4> -->
+        <div class="icon-block">
+          <h2 class="black-text">
+            <i class="{{section.icon}}"></i>
+          </h2>
+        </div>
+        {{ editable-text text=section.text }}
+      </div>
+
+    {{/each}}
+    </div>
+  </div> 
+</div>
+<!-- /Seccion Eventos -->

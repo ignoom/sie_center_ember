@@ -1,0 +1,22 @@
+{{#if isHeader1}}
+<h1 class="modifiable-text" {{action "textClick"}}>{{text}}</h1>
+{{else if isHeader2}}
+<h2 class="modifiable-text" {{action "textClick"}}>{{text}}</h2>
+{{else if isHeader3}}
+<h3 class="modifiable-text" {{action "textClick"}}>{{text}}</h3>
+{{else if isHeader4}}
+<h4 class="modifiable-text" {{action "textClick"}}>{{text}}</h4>
+{{else}}
+<p class="modifiable-text" {{action "textClick"}}>{{text}}</p>
+{{/if}}
+
+<div class="editor-container hide color blue-grey lighten-5">
+	<div class="input-field col s12">
+		{{textarea value=text class="editor-text-area materialize-textarea"}}
+		<label for="textarea1">Contenido</label>
+	</div>
+	{{md-btn-submit icon='mdi-action-highlight-remove' class="color red" iconPosition='right' text='Cancel' action="buttonCancelClick"}}
+	{{md-btn-submit icon='mdi-content-send' iconPosition='right' text='Submit' action="buttonSubmitClick"}}
+</div>
+
+{{yield}}
