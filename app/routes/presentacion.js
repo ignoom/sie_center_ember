@@ -20,7 +20,7 @@ export default Ember.Route.extend(AppMixin,{
 		var info_obj = {
 			title: "",
 			sections: [ {subtitle: "Valores", text: "", bullets: ["valor1", "valor2", "valor3"]},
-						{subtitle: "Presencia Internacional", text:"", img: ""},
+						{subtitle: "Presencia Internacional", text:"", img: "america-latina.png"},
 						{subtitle: "Clientes", text:"", img: "logos_clientes.png"}]
 		};
 
