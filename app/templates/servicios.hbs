@@ -2,10 +2,10 @@
 <div class="section" id="servicios">
   <div class="container center">
     <div class="row">
-      {{editable-text text=servicios.title header='h2'}}
+      {{editable-text text=model.servicios.title header='h2'}}
     </div>
     <div class="row">
-      {{#each section in servicios.sections}}
+      {{#each section in model.servicios.sections}}
         
       <div class="col s12 m4 ">
         {{editable-text text=section.subtitle header='h3'}}

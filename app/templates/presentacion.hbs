@@ -1,12 +1,11 @@
 <div id="presentacion" class="section quienes-somos indigo">
   <div class="container center">
-  {{title}}
     <div class="row">
-      {{editable-text text=quienes_somos.title header='h1'}}
+      {{editable-text text=model.quienes_somos.title header='h1'}}
     </div>
     <div class="row">
       <!-- 3 columnas --> 
-      {{#each section in quienes_somos.sections}}
+      {{#each section in model.quienes_somos.sections}}
       <div class="col s12 m4 ">
         {{editable-text text=section.subtitle header='h3'}}
         <div class= "icon-block">
@@ -18,7 +17,7 @@
           {{editable-text text=section.text }}
         </div>
       </div>
-      {{/each}}
+      {{/each}}d
     </div>
   </div>
 </div>
@@ -28,7 +27,7 @@
     </div>
     <div class="row">
       <!-- 3 columnas --> 
-      {{#each section in info.sections}}
+      {{#each section in model.info.sections}}
       <div class="col s12 m4 ">
         {{editable-text text=section.subtitle header='h3'}}
         <div class= "icon-block">
@@ -58,10 +57,10 @@
 <div class="section como-ayudar">
   <div class="container">
     <div class="row">
-      {{editable-text text=como_ayudar.title header='h3'}}
+      {{editable-text text=model.como_ayudar.title header='h3'}}
     </div>
     <div class="row">
-    {{#each section in como_ayudar.sections}}
+    {{#each section in model.como_ayudar.sections}}
       <div class="row ">
         {{editable-text text=section.subtitle}}
       </div>
@@ -69,7 +68,7 @@
         {{editable-text text=section.text}}
       </div>
     {{/each}}
-    {{#if como_ayudar.footer}}
+    {{#if model.como_ayudar.footer}}
       <div class="row">
         {{editable-text text=como_ayudar.footer}}
       </div>

@@ -2,13 +2,13 @@
 <div class ="" id="contacto">
   <div class="section teal">
     <div class="container center">
-      {{editable-text text=contacto.title header='h3'}}
+      {{editable-text text=model.contacto.title header='h3'}}
 
       <!-- Row superior -->
         <div class="row">
-          {{editable-text text=contacto.subtitle header='h4'}}
+          {{editable-text text=model.contacto.subtitle header='h4'}}
           
-          {{#each section in contacto.sections}}
+          {{#each section in model.contacto.sections}}
             <div class="col s12 m3">
             {{ editable-text text=section.text }}
             <i class="{{section.icon}}"></i>
@@ -21,7 +21,7 @@
       <div class="row">
       <!-- Contenido telefono y correo derecho -->
         <div class="col s12 m6 left-align contacto-col-izq">
-          {{#each detail in contacto.details}}
+          {{#each detail in model.contacto.details}}
           <div class="row">
 
             <i class="{{detail.icon}}"></i>
