@@ -1,22 +1,22 @@
 <!-- Seccion Eventos -->
-<div class="section lime lighten-5" id="eventos">
+<div class="section deep-purple lighten-4" id="eventos">
   <div class="container center">
     <div class="row">
-      {{ editable-text text=model.eventos.title header="h2" }}
+      {{ editable-text text=model.eventos.title header="h2" class="deep-purple-text" }}
       <!-- <h2>Eventos</h2> -->
     </div>
     <div class="row">
     {{#each section in model.eventos.sections}}
 
       <div class="col s12 m6 ">
-        {{ editable-text text=section.subtitle header="h3" }}
+        {{ editable-text text=section.subtitle header="h3" class="deep-purple-text"}}
         <!-- <h4>Congresos</h4> -->
         <div class="icon-block">
           <h2 class="black-text">
-            <i class="{{section.icon}}"></i>
+            <i class="{{section.icon}} deep-purple-text"></i>
           </h2>
         </div>
-        {{ editable-text text=section.text }}
+        {{ editable-text text=section.text class="deep-purple-text"}}
       </div>
 
     {{/each}}

@@ -59,21 +59,21 @@
 <div class="divider"></div>
 <div class="section como-ayudar">
   <div class="container">
-    <div class="row">
-      {{editable-text text=model.como_ayudar.title header='h3'}}
+    <div class="row center">
+      {{editable-text text=model.como_ayudar.title header='h3' class='indigo-text'}}
     </div>
     <div class="row">
     {{#each section in model.como_ayudar.sections}}
       <div class="row ">
-        {{editable-text text=section.subtitle}}
+        {{editable-text text=section.subtitle header='h4' class='blue-text text-lighten-2'}}
       </div>
-      <div class="row">
-        {{editable-text text=section.text}}
+      <div class="row idented-5">
+        {{editable-text text=section.text header='h5' class='blue-text text-lighten-2'}}
       </div>
     {{/each}}
     {{#if model.como_ayudar.footer}}
-      <div class="row">
-        {{editable-text text=como_ayudar.footer}}
+      <div class="row idented-10">
+        {{editable-text text=model.como_ayudar.footer header='h4' class='light-green-text text-lighten-2'}}
       </div>
     {{/if}}
     </div>

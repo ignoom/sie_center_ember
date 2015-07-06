@@ -1,13 +1,15 @@
 {{#if isHeader1}}
-<h1 class="modifiable-text" {{action "textClick"}}>{{text}}</h1>
+<h1 class="modifiable-text " {{action "textClick"}}>{{text}}</h1>
 {{else if isHeader2}}
-<h2 class="modifiable-text" {{action "textClick"}}>{{text}}</h2>
+<h2 class="modifiable-text " {{action "textClick"}}>{{text}}</h2>
 {{else if isHeader3}}
-<h3 class="modifiable-text" {{action "textClick"}}>{{text}}</h3>
+<h3 class="modifiable-text " {{action "textClick"}}>{{text}}</h3>
 {{else if isHeader4}}
-<h4 class="modifiable-text" {{action "textClick"}}>{{text}}</h4>
+<h4 class="modifiable-text " {{action "textClick"}}>{{text}}</h4>
+{{else if isHeader5}}
+<h5 class="modifiable-text " {{action "textClick"}}>{{text}}</h5>
 {{else}}
-<p class="modifiable-text" {{action "textClick"}}>{{text}}</p>
+<p class="modifiable-text " {{action "textClick"}}>{{text}}</p>
 {{/if}}
 
 <div class="editor-container hide color blue-grey lighten-5">

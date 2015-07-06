@@ -47,5 +47,8 @@ export default Ember.Component.extend({
   }.property('header'),
   isHeader4: function(){
     return this.get('header') === 'h4';
+  }.property('header'),
+  isHeader5: function(){
+    return this.get('header') === 'h5';
   }.property('header')
 });

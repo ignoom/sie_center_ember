@@ -1,19 +1,19 @@
 <!-- Seccion Servicios -->
-<div class="section" id="servicios">
+<div class="section light-green lighten-4" id="servicios">
   <div class="container center">
     <div class="row">
-      {{editable-text text=model.servicios.title header='h2'}}
+      {{editable-text text=model.servicios.title header='h2' class='deep-purple-text text-darken-3'}}
     </div>
     <div class="row">
       {{#each section in model.servicios.sections}}
         
       <div class="col s12 m4 ">
-        {{editable-text text=section.subtitle header='h3'}}
+        {{editable-text text=section.subtitle header='h3' class='green-text'}}
         <div class= "icon-block">
           <h2 class="brown-text">
             <i class="{{section.icon}}"></i>
           </h2>
-          {{editable-text text=section.text }}
+          {{editable-text text=section.text class='green-text'}}
         </div>
       </div>
 

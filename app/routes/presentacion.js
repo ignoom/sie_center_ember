@@ -27,9 +27,9 @@ export default Ember.Route.extend(AppMixin,{
 		var como_ayudar_obj = {
 			title: "¿Como podemos ayudarle?",
 			sections: [ {subtitle: "¿Desea mejorar productividad?", text: "La solucion es"},
-						{subtitle: "¿Desea disminuir errores", text: "La solucion es"},
-						{subtitle: "¿Desea entregar los proyectos a tiempo", text: "La solucion es"}],
-			footer: [ "Somos LA solucion" ]
+						{subtitle: "¿Desea disminuir errores?", text: "La solucion es"},
+						{subtitle: "¿Desea entregar los proyectos a tiempo?", text: "La solucion es"}],
+			footer: "Somos LA solucion"
 		};
 
 		var obj = {	quienes_somos: quienes_somos_obj,

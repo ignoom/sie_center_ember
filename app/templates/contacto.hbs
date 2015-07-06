@@ -1,7 +1,7 @@
 <!-- Seccion  Contacto-->
-<div class ="" id="contacto">
-  <div class="section teal">
-    <div class="container center">
+<div class ="" >
+  <div class="section indigo lighten-2" id="contacto">
+    <div class="container center indigo-text">
       {{editable-text text=model.contacto.title header='h3'}}
 
       <!-- Row superior -->
@@ -9,7 +9,7 @@
           {{editable-text text=model.contacto.subtitle header='h4'}}
           
           {{#each section in model.contacto.sections}}
-            <div class="col s12 m3">
+            <div class="col s12 m3 blue-text text-darken-2">
             {{ editable-text text=section.text }}
             <i class="{{section.icon}}"></i>
           </div>
