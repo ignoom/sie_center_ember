@@ -22,6 +22,10 @@ module.exports = function(environment) {
     },
   };
 
+  ENV['oauth2-password-grant'] = {
+  serverTokenEndpoint: 'http://tuserver.com/pinchepalo'
+};
+
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;

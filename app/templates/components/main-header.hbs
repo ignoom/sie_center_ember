@@ -7,6 +7,7 @@
               <img class="img-responsive left logo" alt="sie-center" src="assets/img/SIE-Blanco-s.png">
               {{/link-to}}
               <br/>
+
             </div>
             <div class="col s4 m4 hide-on-med-and-down">
               <div class="row slogan-logos">
@@ -29,6 +30,11 @@
               {{#editable-uri uri="http://mx.linkedin.com/in/siecenter"}}
               <i class="fa fa-linkedin-square"></i>
               {{/editable-uri}}
+              {{#if session.isAuthenticated}}
+  <a {{ action 'invalidateSession' }}>Salir</a>
+{{else}}
+  {{#link-to 'login'}}Ingresar{{/link-to}}
+{{/if}}
             </div>
           </div>
           
