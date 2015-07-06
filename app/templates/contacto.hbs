@@ -1,87 +1,86 @@
 <!-- Seccion  Contacto-->
-<div class ="" >
-  <div class="section indigo lighten-2" id="contacto">
-    <div class="container center indigo-text">
-      {{editable-text text=model.contacto.title header='h3'}}
+<div class="section indigo lighten-2" id="contacto">
+  <div class="container center indigo-text">
+    {{editable-text text=model.contacto.title header='h3'}}
 
-      <!-- Row superior -->
-        <div class="row">
-          {{editable-text text=model.contacto.subtitle header='h4'}}
-          
-          {{#each section in model.contacto.sections}}
-            <div class="col s12 m3 blue-text text-darken-2">
-            {{ editable-text text=section.text }}
-            <i class="{{section.icon}}"></i>
-          </div>
-          {{/each }}
-        </div>
-      <!-- /Row superior -->
-
-      <!-- Row inferior de la seccion -->
+    <!-- Row superior -->
       <div class="row">
-      <!-- Contenido telefono y correo derecho -->
-        <div class="col s12 m6 left-align contacto-col-izq">
-          {{#each detail in model.contacto.details}}
-          <div class="row">
-
-            <i class="{{detail.icon}}"></i>
-            {{editable-text text=detail.text}}
-          </div>
-          {{/each}}
+        {{editable-text text=model.contacto.subtitle header='h4'}}
+        
+        {{#each section in model.contacto.sections}}
+          <div class="col s12 m3 blue-text text-darken-2 valign-wrapper">
+            <div class="left half">
+              <i class="{{section.icon}}"></i>
+            </div>
+            {{ editable-text text=section.text class='right half valign'}}
         </div>
-        <!-- fin contenido derecho -->
-       <!-- Contenido izquiero, formulario -->
-       
-       <!-- /Contenido izquierdo, formulario --> 
-        <div class="col s12 m6 right-align">
-         <form class="col s12 m12 yellow lighten-5">
-          
-          <div class="row">
-            <div class="input-field col s12">
-              <i class="mdi-action-account-circle prefix"></i>
-              <input placeholder="Nombre" id="nombre" type="text" class="validate">
-              <label for="nombre">Nombre</label>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="input-field col s12">
-              <i class="mdi-social-location-city prefix"></i>
-              <input placeholder="Empresa" id="empresa" type="text" class="validate">
-              <label for="empresa">Empresa</label>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="input-field col s12">
-              <i class="mdi-communication-email prefix"></i>
-              <input placeholder="E-Mail" id="email" type="text" class="">
-              <label for="email">E-Mail</label>
-            </div>
-          </div>
-
-
-          <div class="row">
-            <div class="input-field col s12">
-              <i class="mdi-communication-phone prefix"></i>
-              <input placeholder="Telefono" id="telefono" type="text" class="">
-              <label for="telefono">Telefono</label>
-            </div>
-          </div>
-
-          <div class="row">
-             <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
-              <i class="mdi-content-send right"></i>
-             </button>
-          </div>
-         
-
-         </form>
-        </div>
+        {{/each }}
       </div>
-      <!-- /Row inferior -->
-      
+    <!-- /Row superior -->
+
+    <!-- Row inferior de la seccion -->
+    <div class="row">
+    <!-- Contenido telefono y correo derecho -->
+      <div class="col s12 m6 left-align contacto-col-izq">
+        {{#each detail in model.contacto.details}}
+        <div class="row valign-wrapper">
+          <div class="left">
+            <i class="{{detail.icon}}"></i>
+          </div>
+          {{editable-text text=detail.text class="valign"}}
+        </div>
+        {{/each}}
+      </div>
+      <!-- fin contenido derecho -->
+     <!-- Contenido izquiero, formulario -->
+     
+     <!-- /Contenido izquierdo, formulario --> 
+      <div class="col s12 m6 right-align">
+       <form class="col s12 m12 yellow lighten-5">
+        
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="mdi-action-account-circle prefix"></i>
+            <input placeholder="Nombre" id="nombre" type="text" class="validate">
+            <label for="nombre">Nombre</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="mdi-social-location-city prefix"></i>
+            <input placeholder="Empresa" id="empresa" type="text" class="validate">
+            <label for="empresa">Empresa</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="mdi-communication-email prefix"></i>
+            <input placeholder="E-Mail" id="email" type="text" class="">
+            <label for="email">E-Mail</label>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="mdi-communication-phone prefix"></i>
+            <input placeholder="Telefono" id="telefono" type="text" class="">
+            <label for="telefono">Telefono</label>
+          </div>
+        </div>
+
+        <div class="row">
+           <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
+            <i class="mdi-content-send right"></i>
+           </button>
+        </div>
+       </form>
+      </div>
     </div>
+    <!-- /Row inferior -->
+    
   </div>
 </div>
 <!-- /Seccion Contacto -->
