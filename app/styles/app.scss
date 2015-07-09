@@ -1,5 +1,6 @@
-@import 'materialize';
+//@import 'bower_components/owl-carousel2/src/img/ajax-loader.gif';
 
+@import 'materialize';
 /* FIXME: Workaround for https://github.com/Dogfalo/materialize/issues/1079 */
 @each $mdi-icon-name, $mdi-icon-value in $mdi-list-icons {
   .#{$mdi-prefix}#{$mdi-icon-name}:before {

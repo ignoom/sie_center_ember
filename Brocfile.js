@@ -20,5 +20,30 @@ var app = new EmberApp({
 // modules that you would like to import into your application
 // please specify an object with the list of modules as keys
 // along with the exports of each module as its value.
+/*
+app.import('bower_components/owl.carousel/dist/owl.carousel.js', {
+	//type: 'vendor',
+	//prepend: false
+});
+
+/**
+<link rel="stylesheet" href="http://owlgraphic.com/owlcarousel/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="http://owlgraphic.com/owlcarousel/owl-carousel/owl.theme.css">
+*/
+
+/*
+app.import('bower_components/owl-carousel2/dist/assets/owl.carousel.css', {
+	type: 'vendor',
+	prepend: true
+	//destDir: 'assets'
+});
+
+app.import('bower_components/owl-carousel2/dist/assets/owl.theme.default.css', {
+	type: 'vendor',
+	prepend: true
+	//destDir: 'assets'
+});
+/**
+*/
 
 module.exports = app.toTree();
